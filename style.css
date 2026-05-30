@@ -1068,195 +1068,206 @@ nav ul{
 @media (max-width: 768px){
 
     body{
-        overflow-x:hidden;
+        overflow-x: hidden;
     }
 
     nav{
+        width: 95% !important;
+        padding: 14px 16px !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+        margin: 12px auto !important;
+        position: relative !important;
+    }
 
-        width:95%;
-
-        padding:15px;
-
-        flex-direction:column;
-
-        gap:15px;
-
+    nav::before{
+        opacity: 0.02 !important;
     }
 
     .logo{
-
-        font-size:28px;
-
-        text-align:center;
-
+        font-size: 24px !important;
+        gap: 8px !important;
+        text-align: center !important;
     }
 
     .logo img{
-
-        width:45px;
-
-        height:45px;
-
+        width: 42px !important;
+        height: 42px !important;
+        margin-top: 0 !important;
     }
 
     nav ul{
-
-        display:flex;
-
-        flex-wrap:wrap;
-
-        justify-content:center;
-
-        gap:10px;
-
+        width: 100% !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px 10px !important;
     }
 
     nav ul li a{
-
-        font-size:14px;
-
+        font-size: 13px !important;
+        padding: 6px 8px !important;
+        white-space: nowrap !important;
     }
 
-    /* ANTIGUA - ATITLAN - TIKAL */
-
-    .tourism-hero{
-
-        width:95%;
-
-        min-height:450px;
-
-        height:auto;
-
-        margin:25px auto;
-
-        border-radius:30px;
-
+    .hero{
+        width: 95% !important;
+        height: auto !important;
+        min-height: 320px !important;
+        padding: 18px 12px !important;
     }
 
-    .tourism-overlay{
-
-        width:100%;
-
-        padding:20px;
-
+    .hero-content h1{
+        width: 100% !important;
+        font-size: clamp(28px, 8vw, 40px) !important;
+        line-height: 1.05 !important;
+        margin-bottom: 10px !important;
     }
 
-    .tourism-overlay h1{
-
-        width:100%;
-
-        font-size:42px;
-
-        line-height:1.1;
-
-        margin-bottom:15px;
-
+    .hero-content p{
+        font-size: clamp(15px, 4vw, 18px) !important;
+        margin-bottom: 16px !important;
+        line-height: 1.4 !important;
     }
 
-    .tourism-overlay p{
-
-        width:100%;
-
-        font-size:18px;
-
-        line-height:1.5;
-
+    .hero-content button{
+        font-size: 14px !important;
+        padding: 12px 18px !important;
     }
 
-    .cards-section{
-
-        width:95%;
-
-        display:flex;
-
-        flex-direction:column;
-
-        gap:20px;
-
+    .section-title{
+        width: 95% !important;
+        font-size: 34px !important;
+        text-align: center !important;
     }
 
-    .mini-card{
-
-        width:100%;
-
+    .categories,
+    .places,
+    .cards-section,
+    .about-cards,
+    .inspiration-grid,
+    .tech-grid{
+        width: 95% !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 18px !important;
     }
 
-    .mini-card h3{
-
-        font-size:24px;
-
+    .card,
+    .place-card,
+    .mini-card,
+    .info-card,
+    .tech-card{
+        width: 100% !important;
     }
 
-    .mini-card p{
-
-        font-size:16px;
-
+    .card h3{
+        font-size: 28px !important;
     }
 
-    footer{
-
-        padding:25px;
-
+    .card p,
+    .place-content p,
+    .mini-card p,
+    .info-card p,
+    .place-info p{
+        font-size: 16px !important;
+        line-height: 1.6 !important;
     }
 
-    footer h3{
-
-        font-size:28px;
-
+    .place-row{
+        flex-direction: column !important;
     }
 
-    footer p{
-
-        font-size:14px;
-
+    .place-row img{
+        width: 100% !important;
+        height: 220px !important;
     }
 
-}
+    .place-info h2,
+    .info-section h2{
+        font-size: 28px !important;
+    }
 
-@media (max-width: 768px){
+    .about-hero{
+        width: 95% !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+        margin: 30px auto !important;
+    }
+
+    .about-text h1{
+        font-size: 36px !important;
+    }
+
+    .about-text p{
+        font-size: 16px !important;
+        line-height: 1.7 !important;
+    }
+
+    .about-image img{
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .inspiration{
+        width: 95% !important;
+        padding: 22px !important;
+        margin: 40px auto !important;
+    }
+
+    .inspiration h2{
+        font-size: 28px !important;
+    }
+
+    .inspire-img{
+        width: 100% !important;
+        height: 160px !important;
+    }
 
     .tourism-hero{
         width: 95% !important;
-        min-height: 340px !important;
+        min-height: 330px !important;
         height: auto !important;
         margin: 20px auto !important;
-        border-radius: 24px !important;
-        padding: 18px !important;
-        box-sizing: border-box;
+        padding: 16px !important;
     }
 
     .tourism-overlay{
         width: 100% !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        text-align: center !important;
         padding: 0 !important;
-        margin: 0 !important;
+        text-align: center !important;
     }
 
     .tourism-overlay h1{
         font-size: clamp(26px, 7vw, 36px) !important;
         line-height: 1.05 !important;
         width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 0 12px 0 !important;
+        margin-bottom: 10px !important;
         word-break: break-word !important;
         overflow-wrap: anywhere !important;
     }
 
     .tourism-overlay p{
-        font-size: clamp(15px, 4vw, 18px) !important;
+        font-size: clamp(14px, 4vw, 18px) !important;
         line-height: 1.45 !important;
         width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 !important;
+        margin: 0 auto !important;
         word-break: break-word !important;
         overflow-wrap: anywhere !important;
     }
 
     .tourism-overlay p br{
         display: none !important;
+    }
+
+    footer{
+        padding: 22px 14px !important;
+    }
+
+    footer h3{
+        font-size: 24px !important;
+    }
+
+    footer p{
+        font-size: 14px !important;
     }
 }
