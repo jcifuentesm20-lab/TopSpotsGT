@@ -1212,3 +1212,51 @@ nav ul{
     }
 
 }
+
+@media (max-width: 768px){
+
+    .tourism-hero{
+        width: 95% !important;
+        min-height: 340px !important;
+        height: auto !important;
+        margin: 20px auto !important;
+        border-radius: 24px !important;
+        padding: 18px !important;
+        box-sizing: border-box;
+    }
+
+    .tourism-overlay{
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .tourism-overlay h1{
+        font-size: clamp(26px, 7vw, 36px) !important;
+        line-height: 1.05 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 0 12px 0 !important;
+        word-break: break-word !important;
+        overflow-wrap: anywhere !important;
+    }
+
+    .tourism-overlay p{
+        font-size: clamp(15px, 4vw, 18px) !important;
+        line-height: 1.45 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        word-break: break-word !important;
+        overflow-wrap: anywhere !important;
+    }
+
+    .tourism-overlay p br{
+        display: none !important;
+    }
+}
